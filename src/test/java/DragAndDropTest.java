@@ -1,7 +1,7 @@
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
+
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
@@ -10,10 +10,9 @@ public class DragAndDropTest {
 
     @BeforeAll
     static void beforeAll() {
-        Configuration.baseUrl="https://the-internet.herokuapp.com/drag_and_drop";
         Configuration.browserSize = "1920x1080"; // Разрешение браузера
         Configuration.pageLoadStrategy = "eager"; // Параметры загрузки страницы
-        open("");
+        open("https://the-internet.herokuapp.com/drag_and_drop");
 
     }
 
